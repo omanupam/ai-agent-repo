@@ -89,7 +89,7 @@ finance_agent = Agent(
 pdf_agent = Agent(
     model=Gemini(id="gemini-2.0-flash", api_key=os.getenv('GOOGLE_API_KEY')),
     name="PDF Agent",
-    description="You are an assistant that can help with general questions and tasks.",
+    description="You are an expert assistant that can help with general questions and tasks.",
     knowledge=pdfKnowledgeBase,
     search_knowledge=True
 )
